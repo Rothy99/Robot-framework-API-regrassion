@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230605 10:31:35.811" rpa="false" schemaversion="3">
+<suite id="s1" name="Unblock Account" source="d:\robot\MB Admin\testcases\unblock_account.robot">
+<test id="s1-t1" name="Search customer profile" line="4">
+<kw name="Access login" library="auth">
+<kw name="Open Browser">
+<arg>https://mb-admin-uat.hatthabank.com/login</arg>
+<arg>chrome</arg>
+<msg timestamp="20230605 10:31:35.877" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20230605 10:31:35.877" endtime="20230605 10:31:35.878"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20230605 10:31:35.881" endtime="20230605 10:31:35.881"/>
+</kw>
+<kw name="Input text">
+<arg>id=input-14</arg>
+<arg>mbReviewer</arg>
+<status status="NOT RUN" starttime="20230605 10:31:35.883" endtime="20230605 10:31:35.883"/>
+</kw>
+<kw name="Input password">
+<arg>id=input-18</arg>
+<arg>mbReviewer@123</arg>
+<status status="NOT RUN" starttime="20230605 10:31:35.885" endtime="20230605 10:31:35.886"/>
+</kw>
+<kw name="Click Button">
+<arg>//*[@id="__layout"]/div/div[1]/div/div/div[1]/div/div/div/div/div/div[3]/div/form/div[2]/div[3]/button</arg>
+<status status="NOT RUN" starttime="20230605 10:31:35.887" endtime="20230605 10:31:35.888"/>
+</kw>
+<status status="FAIL" starttime="20230605 10:31:35.875" endtime="20230605 10:31:35.888"/>
+</kw>
+<status status="FAIL" starttime="20230605 10:31:35.874" endtime="20230605 10:31:35.889">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20230605 10:31:35.816" endtime="20230605 10:31:35.891"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Unblock Account">Unblock Account</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230605 10:31:35.839" level="ERROR">Error in file 'd:\robot\MB Admin\resources\imports.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_debug_adapter
+  D:\robot\MB Admin
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230605 10:31:35.847" level="ERROR">Error in file 'd:\robot\MB Admin\resources\imports.robot' on line 4: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_debug_adapter
+  D:\robot\MB Admin
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230605 10:31:35.853" level="ERROR">Error in file 'd:\robot\MB Admin\resources\imports.robot' on line 5: Importing library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_debug_adapter
+  D:\robot\MB Admin
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src
+  c:\Users\11383\.vscode\extensions\robocorp.robotframework-lsp-1.10.1\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\54a1c34_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230605 10:31:35.869" level="ERROR">Error in file 'd:\robot\MB Admin\resources\imports.robot' on line 10: Processing variable file 'd:\robot\MB Admin\resources\config.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
+</errors>
+</robot>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230605 13:56:44.902" rpa="false" schemaversion="3">
+<suite id="s1" name="MB Admin" source="D:\robot\MB Admin">
+<suite id="s1-s1" name="Testcases" source="D:\robot\MB Admin\testcases">
+<suite id="s1-s1-s1" name="Unblock Account" source="D:\robot\MB Admin\testcases\unblock_account.robot">
+<test id="s1-s1-s1-t1" name="Search customer profile" line="4">
+<kw name="Access login" library="auth">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://mb-admin-uat.hatthabank.com/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 13:56:45.170" level="INFO">Opening browser 'chrome' to base url 'https://mb-admin-uat.hatthabank.com/login'.</msg>
+<msg timestamp="20230605 13:56:45.174" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230605 13:56:45.169" endtime="20230605 13:56:49.579"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230605 13:56:49.579" endtime="20230605 13:56:49.701"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id=input-14</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230605 13:56:49.702" level="INFO">Typing text 'admin' into text field 'id=input-14'.</msg>
+<status status="PASS" starttime="20230605 13:56:49.701" endtime="20230605 13:56:49.865"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>id=input-18</arg>
+<arg>admin</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230605 13:56:49.866" level="INFO">Typing password into text field 'id=input-18'.</msg>
+<msg timestamp="20230605 13:56:49.903" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230605 13:56:49.956" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230605 13:56:49.865" endtime="20230605 13:56:49.957"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="__layout"]/div/div[1]/div/div/div[1]/div/div/div/div/div/div[3]/div/form/div[2]/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230605 13:56:49.958" level="INFO">Clicking button '//*[@id="__layout"]/div/div[1]/div/div/div[1]/div/div/div/div/div/div[3]/div/form/div[2]/div[3]/button'.</msg>
+<status status="PASS" starttime="20230605 13:56:49.957" endtime="20230605 13:56:50.016"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="app"]/div/header/div/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230605 13:56:50.016" level="INFO">Clicking button '//*[@id="app"]/div/header/div/button[1]'.</msg>
+<msg timestamp="20230605 13:56:50.565" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-62.png"&gt;&lt;img src="selenium-screenshot-62.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230605 13:56:50.565" level="FAIL">Button with locator '//*[@id="app"]/div/header/div/button[1]' not found.</msg>
+<status status="FAIL" starttime="20230605 13:56:50.016" endtime="20230605 13:56:50.569"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230605 13:56:50.569" endtime="20230605 13:56:50.569"/>
+</kw>
+<status status="FAIL" starttime="20230605 13:56:45.168" endtime="20230605 13:56:50.570"/>
+</kw>
+<status status="FAIL" starttime="20230605 13:56:45.167" endtime="20230605 13:56:50.570">Button with locator '//*[@id="app"]/div/header/div/button[1]' not found.</status>
+</test>
+<status status="FAIL" starttime="20230605 13:56:44.931" endtime="20230605 13:56:50.574"/>
+</suite>
+<status status="FAIL" starttime="20230605 13:56:44.925" endtime="20230605 13:56:50.578"/>
+</suite>
+<status status="FAIL" starttime="20230605 13:56:44.905" endtime="20230605 13:56:50.580"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="MB Admin">MB Admin</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testcases">MB Admin.Testcases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Unblock Account">MB Admin.Testcases.Unblock Account</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
